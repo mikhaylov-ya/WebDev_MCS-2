@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald&family=Raleway:wght@100&display=swap');
+
+
+.maintext{
+	width: 800px;
+	font-weight: 600;
+	line-height: 1.3em;
+	font-size: 16px;
+
+}
+
+a {
+	font-size: 16px;
+	font-weight: 700;
+
+}
+
+body {
+	background-image: linear-gradient(60deg, #d4fc79 10%, #96e6a1 100%);
+	}
+
+.section-text {
+	background-color: black;
+	color: white;
+	width: 800px;
+	font-family: Oswald, serif;
+	font-size: 1.4em;
+
+}
+
+header {
+	font-family: Oswald, serif;
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+
+.content-container {
+	margin-left: 80px;
+	font-family: 'Raleway', serif;
+}

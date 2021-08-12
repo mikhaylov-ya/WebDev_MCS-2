@@ -1,0 +1,84 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald&family=Raleway:wght@100&display=swap');
+
+.page {
+	width: 1440px;
+}
+.header-container {
+	height: 200px;
+	background-color: rgb(232, 208, 102);
+}
+
+.name {
+	padding: 0 890px 0 80px;
+	font-size: 2.8em;
+	font-weight: bold;
+	line-height: 200px;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: .12em;
+	color: rgb(69, 111, 176);
+}
+
+
+.background {
+	height: 1080px;
+	background-image: url(../img/005.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.works {
+	height: 100px;
+	background-color: rgb(232, 208, 102);
+}
+
+.links-to-works {
+	font-family: Railway, serif;
+	font-size: 26px;
+	line-height: 100px;
+	font-weight: bold;
+	padding: 0 425px 0 80px;
+	color: white;
+}
+
+.worklink {
+	color: white;
+	text-decoration: none;
+}
+
+.bio-container {
+	height: 800px;
+	background-image: linear-gradient(to bottom, rgb(232, 208, 102), 
+		white)
+}
+
+.bio {
+	font-family: 'Railway', sans-serif;
+	font-size: 35px;
+	font-weight: lighter;
+	line-height: 1.2em;
+	padding: 100px 80px 100px 80px;
+}
+
+.mcs {
+	height: 200px;
+	background-color: rgb(232, 208, 102);
+	font-family: 'Railway', sans-serif;
+	font-weight: bold;
+	font-size: 45px;
+}
+
+.logo {
+	vertical-align: middle;
+	padding: 77px 0 77px 80px;
+
+}
+
+.course-name {
+	display: inline-block;
+	padding-left: 550px;
+	color: white;
+	font-family: 'Railway', serif;
+
+
+}
