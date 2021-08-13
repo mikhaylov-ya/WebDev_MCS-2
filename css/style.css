@@ -30,20 +30,19 @@
 	background-color: rgb(232, 208, 102);
 }
 
-.links-to-works {
-	margin-left: 5rem;
+.links-to-works * {
 	text-align: left center;
 	font-family: Railway, sans-serif;
 	font-size: 22px;
 	font-weight: 600;
-	letter-spacing: .1em;
-	color: white;
-}
-
-.worklink {
 	line-height: 4em;
+	letter-spacing: .1em;
 	text-decoration: none;
 	color: rgb(69, 111, 176);
+}
+
+.worklist {
+	margin-left: 5rem;
 }
 
 
