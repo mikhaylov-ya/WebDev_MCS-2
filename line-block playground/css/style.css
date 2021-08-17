@@ -1,0 +1,45 @@
+body {
+  color: #414141;             
+  background-color: #EEEEEE;
+  font-size: 18px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+.parent {
+	background-color: gold;
+	margin: auto;
+	width: 800px;
+	height: 90rem;
+	border: firebrick solid;
+}
+
+div {
+	width: 120%;
+	background-color: fuchsia;
+	border: 10px solid  darkturquoise;
+	box-sizing: border-box;
+	font-size: 35px;
+	padding: 20px;
+	font-family: Georgia;
+}
+
+.ass {
+	width: 100%;
+	background-color: fuchsia;
+	border: 20px solid navy;
+	box-sizing: border-box;
+	padding: 35px;
+	font-family: Helvetica;
+	font-size: 20px;
+	position: relative;
+	color: sienna;
+	right: 300px;
+
+}

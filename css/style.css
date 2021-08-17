@@ -1,8 +1,9 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oswald&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Lato');
 
 .page {
 	width: 1440px;
+	margin: auto;
 }
 .header-container {
 	background-color: rgb(232, 208, 102); 
@@ -13,9 +14,13 @@
 	font-size: 3em;
 	font-weight: bold;
 	line-height: 150px;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald';
 	letter-spacing: .12em;
 	color: rgb(69, 111, 176);
+}
+
+a:hover {
+	color:  rgba(69, 111, 176, .3);
 }
 
 
@@ -26,28 +31,25 @@
 	background-repeat: no-repeat;
 }
 
-.works {
+
+.links-to-works  {
 	background-color: rgb(232, 208, 102);
+	text-align: center;
+	font-family: Lato;
+	font-size: 2.2em;
+	font-weight: bolder;
+	line-height: 3em;
+	letter-spacing: .12em;
+	color: white;
 }
-
-.links-to-works * {
-	text-align: left center;
-	font-family: Railway, sans-serif;
-	font-size: 22px;
-	font-weight: 600;
-	line-height: 4em;
-	letter-spacing: .1em;
-	text-decoration: none;
-	color: rgb(69, 111, 176);
-}
-
-.worklist {
-	margin-left: 5rem;
-}
-
 
 .worklist-point {
 	display: inline;
+}
+
+.worklink {
+	text-decoration: inherit;
+	color: rgb(69, 111, 176);
 }
 
 .bio-container {
@@ -57,10 +59,11 @@
 }
 
 .bio {
-	font-family: 'Railway', sans-serif;
-	font-size: 35px;
-	font-weight: lighter;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
 	line-height: 1.3em;
+	letter-spacing: 1.5px;
 	margin: 3rem;
 }
 
