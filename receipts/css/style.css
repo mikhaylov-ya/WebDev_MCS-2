@@ -1,7 +1,7 @@
 @import url(reset.css);
 
 body {
-	width: clamp(200px, 100%, 1440px);
+	width: clamp(1000px, 100%, 1440);
 	margin: auto;
 }
 
@@ -23,8 +23,7 @@ p.lead {
 }
 
 .allrecs {
-	padding-left: 6rem;
-	padding-right: 6rem;
+	text-align: center;
 }
 .rec-container {
 	border: solid gold;
@@ -32,9 +31,10 @@ p.lead {
 	display: inline-block;
 	border-width: 5px;
 	box-sizing: border-box;
-	padding: 2rem 5rem 2rem 1rem;
+	padding: 2rem;
 	text-align: left;
-	margin: 2rem 2rem;
+	margin: 2rem;
+	width: 350px;
 }
 
 .rec-container h3 {
@@ -48,7 +48,7 @@ p.lead {
 }
 
 .rec-container p {
-	line-height: 1.2rem;
+	line-height: 1.1rem;
 }
 
 
