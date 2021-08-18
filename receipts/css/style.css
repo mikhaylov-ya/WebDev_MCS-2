@@ -11,13 +11,15 @@ body {
 	color: white;
 }
 
-p {
+li {
 	font: 1.08em Helvetica, sans-serif;
 }
 
-.second-column {
-	margin: 2rem 4rem;
-}
+/*.second-column {
+	margin-left: 4rem;
+	margin-right: 4rem;
+
+}*/
 
 p.lead {
 	margin-left: 1.2rem;
@@ -38,6 +40,7 @@ p.lead {
 	padding: 2rem;
 	text-align: left;
 	width: 320px;
+	margin: 2rem;
 }
 
 .rec-container h3 {
