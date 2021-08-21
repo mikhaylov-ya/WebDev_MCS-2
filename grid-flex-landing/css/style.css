@@ -117,7 +117,6 @@ header {
 
 .footer {
 	background-color: rgb(243,193,200);
-	margin-top: 10%;
 	display: flex;
 	width: inherit;
 	justify-content: space-between;
