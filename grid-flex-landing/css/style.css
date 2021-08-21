@@ -46,7 +46,7 @@ header {
 }
 
 .nav-menu > ul {
-	display: inline-flex;
+	display: flex;
 	column-gap: 25px;
 }
 
