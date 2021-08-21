@@ -1,10 +1,14 @@
 @import url(reset.css);
 
+html {
+	font-size: 10px;
+}
 
 body {
 	width: 100%;
-	font: 50px Inter, sans-serif;
+	font: 5rem Inter, sans-serif;
 	color: red;
+	transition-duration: 0.5s;
 }
 
 a {
@@ -13,8 +17,7 @@ a {
 }
 
 main {
-	position: relative;
-	top: 138px;
+	margin-top: 128px;
 	width: inherit;
 }
 
@@ -23,22 +26,15 @@ header {
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	position: fixed;
 	z-index: 2;
 	width: inherit;
+	top: 0;
+	box-sizing: border-box;
+	padding: 2rem 5rem;
 }
 
-.header__left {
-	padding: 40px;
-}
-
-.header__right {
-	width: 30%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-right: 25px;
-}
 
 .logo {
 	letter-spacing: .1em;
@@ -46,16 +42,12 @@ header {
 
 .menu {
 	display: flex;
-	margin-right: 50px;
-}
-
-.menu > li {
-	padding: 15px;
+	column-gap: 2.5rem;
 }
 
 .main-land {
 	background-image: url(../img/logo.png);
-	height: 950px;
+	height: 95rem;
 	background-size: cover;
 	width: inherit;
 	background-repeat: no-repeat;
@@ -64,35 +56,39 @@ header {
 
 .main-land > p {
 	margin: auto;
-	font-size: 80px;
+	font-size: 8rem;
+	transition-duration: 0.5s;
 }
 
 .main-descr {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: center;
 }
 
 .case {
 	width: 20%;
 	text-align: center;
+	transition-duration: 0.5s;
+
 }
 
 .case > p {
-	font-size: 25px;
+	font-size: 2.5rem;
 	color: black;
 	letter-spacing: normal;
-	margin-top: 50px;
+	margin-top: 5rem;
+
 }
 
 .case img {
 	width: auto;
 	height: auto;
 }
+
 .case:nth-child(2)
 {
-	margin: 0 15px;
+	margin: 0 1.5rem;
 }
 
 
@@ -103,23 +99,21 @@ header {
 	font-size: 25px;
 	color: black;
 	letter-spacing: .05em;
-	padding: 20px;
+	padding: 2rem;
 	margin: 10%;
+	max-width: 150rem;
 }
 
 .description > p:nth-child(1) {
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
 
 .composition {
 	display: flex;
 	align-items: center;
-}
-
-.composition > img {
-	margin: 0 5%;
 
 }
+
 
 .footer {
 	background-color: rgb(243,193,200);
@@ -131,15 +125,15 @@ header {
 
 .footer > p {
 	color: white;
-	line-height: 100px;
+	line-height: 10rem;
 }
 
 .footer > p:nth-child(1) {
-	margin-left: 50px;
+	margin-left: 5rem;
 }
 
 .footer > p:nth-child(2) {
-	margin-right: 50px;
+	margin-right: 5rem;
 }
 
 
@@ -151,19 +145,16 @@ header {
 
 @media all and (max-width: 900px) {
 	body, .main-land > p {
-		font-size: 30px;
+		font-size: 3rem;
 	}
 	.description > p, .composition > ul, .case > p {
-		font-size: 14px;
-	}
-
-	.menu {
-		margin-right: 30vw;
+		font-size: 1.4rem;
 	}
 
 	.case img {
-		width: 100px;
+		width: 10rem;
 		height: auto;
+
 	}
 }
 
