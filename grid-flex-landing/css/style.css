@@ -52,8 +52,8 @@ header {
 
 .main-land {
 	background-image: url(../img/logo.png);
-	height: 100%;
-	background-size: contain;
+	height: 950px;
+	background-size: cover;
 	width: inherit;
 	background-repeat: no-repeat;
 	display: flex;
