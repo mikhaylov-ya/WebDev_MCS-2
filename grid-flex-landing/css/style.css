@@ -41,13 +41,16 @@ header {
 }
 
 .logo {
-	font: 50px Inter, sans-serif;
 	letter-spacing: .1em;
 }
 
-.nav-menu > ul {
+.menu {
 	display: flex;
-	column-gap: 25px;
+	margin-right: 50px;
+}
+
+.menu > li {
+	padding: 15px;
 }
 
 .main-land {
@@ -68,7 +71,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: space-around;
+	align-content: center;
 }
 
 .case {
@@ -83,6 +86,10 @@ header {
 	margin-top: 50px;
 }
 
+.case img {
+	width: auto;
+	height: auto;
+}
 .case:nth-child(2)
 {
 	margin: 0 15px;
@@ -106,10 +113,12 @@ header {
 
 .composition {
 	display: flex;
+	align-items: center;
 }
 
 .composition > img {
 	margin: 0 5%;
+
 }
 
 .footer {
@@ -131,5 +140,30 @@ header {
 
 .footer > p:nth-child(2) {
 	margin-right: 50px;
+}
+
+
+.menu > li:hover {
+	background-color: rgb(243,193,200);
+	color: white;
+	border-radius: 10px;
+}
+
+@media all and (max-width: 900px) {
+	body, .main-land > p {
+		font-size: 30px;
+	}
+	.description > p, .composition > ul, .case > p {
+		font-size: 14px;
+	}
+
+	.menu {
+		margin-right: 30vw;
+	}
+
+	.case img {
+		width: 100px;
+		height: auto;
+	}
 }
 
