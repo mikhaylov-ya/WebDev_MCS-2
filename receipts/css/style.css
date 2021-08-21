@@ -2,7 +2,6 @@
 
 body {
 	width: clamp(1000px, 100%, 1440);
-	margin: auto;
 }
 
 
@@ -15,11 +14,6 @@ li {
 	font: 1.08em Helvetica, sans-serif;
 }
 
-/*.second-column {
-	margin-left: 4rem;
-	margin-right: 4rem;
-
-}*/
 
 p.lead {
 	margin-left: 1.2rem;
@@ -29,18 +23,27 @@ p.lead {
 
 .allrecs {
 	text-align: center;
+	background-color: rgba(102, 211, 110, .6);
+	display: flex;
+	height: 800px;
 }
 
 .rec-container {
 	border: solid gold;
+	background-image: linear-gradient(to right top, white 15%, yellow);
 	border-radius: 15px;
 	display: inline-block;
 	border-width: 5px;
 	box-sizing: border-box;
 	padding: 2rem;
 	text-align: left;
-	width: 320px;
-	margin: 2rem;
+	width: clamp(12rem, 20%, 20%);
+	margin: auto;
+}
+
+.second-column {
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 .rec-container h3 {

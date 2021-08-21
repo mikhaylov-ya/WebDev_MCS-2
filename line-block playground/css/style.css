@@ -20,15 +20,6 @@ h2 {
 	border: firebrick solid;
 }
 
-div {
-	width: 120%;
-	background-color: fuchsia;
-	border: 10px solid  darkturquoise;
-	box-sizing: border-box;
-	font-size: 35px;
-	padding: 20px;
-	font-family: Georgia;
-}
 
 .ass {
 	width: 100%;
@@ -43,3 +34,58 @@ div {
 	right: 300px;
 
 }
+
+.outer {
+  display: flex;
+  justify-content: center;
+}
+
+.outer > div {
+  color: navy;
+  border: 10px solid;
+}
+
+.outer > div:not(:first-child) {
+  margin-left: 20px;
+}
+
+.outer span {
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30rem;
+  position: relative;
+  top: 220px;
+  right: 120px;
+}
+
+.tips-play {
+	margin-top: 200px;
+}
+
+span[data-description] {
+	text-decoration: underline;
+	position: relative;
+}
+
+span[data-description]:hover::after {
+	content: attr(data-description);
+	position: absolute;
+	background-color: black;
+	border-radius: 10px;
+	color: lime;
+	font-weight: bold;
+	border: solid gold 3px;
+	font-family: Georgia, sans-serif;
+	left: 0;
+	font-size: 20px;
+	min-width: 150px;
+	min-height: 28px;
+	text-align: center;
+	padding: 4px;
+	z-index: 1;
+}
+
+
+
+

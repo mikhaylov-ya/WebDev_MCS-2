@@ -1,0 +1,135 @@
+@import url(reset.css);
+
+
+body {
+	width: 100%;
+	font: 50px Inter, sans-serif;
+	color: red;
+}
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+main {
+	position: relative;
+	top: 138px;
+	width: inherit;
+}
+
+
+header {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 2;
+	width: inherit;
+}
+
+.header__left {
+	padding: 40px;
+}
+
+.header__right {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 25px;
+}
+
+.logo {
+	font: 50px Inter, sans-serif;
+	letter-spacing: .1em;
+}
+
+.nav-menu > ul {
+	display: inline-flex;
+	column-gap: 25px;
+}
+
+.main-land {
+	background-image: url(../img/logo.png);
+	height: 950px;
+	background-size: 100%;
+	width: inherit;
+	background-repeat: no-repeat;
+	display: flex;
+}
+
+.main-land > p {
+	margin: auto;
+	font-size: 80px;
+}
+
+.main-descr {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+}
+
+.case {
+	width: 20%;
+	text-align: center;
+}
+
+.case > p {
+	font-size: 25px;
+	color: black;
+	letter-spacing: normal;
+	margin-top: 50px;
+}
+
+.case:nth-child(2)
+{
+	margin: 0 15px;
+}
+
+
+.description, .composition {
+	flex-basis: fill;
+	border: solid rgb(243,193,200) 5px;
+	border-radius: 15px;
+	font-size: 25px;
+	color: black;
+	letter-spacing: .05em;
+	padding: 20px;
+	margin: 10%;
+}
+
+.description > p:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+.composition {
+	display: flex;
+}
+
+.composition > img {
+	margin: 0 5%;
+}
+
+.footer {
+	background-color: rgb(243,193,200);
+	margin-top: 10%;
+	display: flex;
+	width: inherit;
+	justify-content: space-between;
+}
+
+.footer > p {
+	color: white;
+	line-height: 100px;
+}
+
+.footer > p:nth-child(1) {
+	margin-left: 50px;
+}
+
+.footer > p:nth-child(2) {
+	margin-right: 50px;
+}
+

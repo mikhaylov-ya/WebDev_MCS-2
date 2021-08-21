@@ -1,0 +1,53 @@
+@import url(reset.css);
+
+
+/*  свойства для РОДИТЕЛЯ */
+.flex-container {
+	height: 500px;
+	background-color: deepskyblue;
+	display: flex;
+	flex-flow: row wrap;  /* direction + wrap */
+	justify-content: space-around; /* горизонталь */
+	align-items: center; /* вертикаль */
+  /*align-content: - только при 2+ строках и включенном !wrap! или !wrap-reverse!,
+  	выравнивает строки с флекс-элементами */
+}
+
+/*  свойства для ПОТОМКА */
+.flex-item {
+	width: 30%;
+	background-color: gold;
+	text-align: center;
+	line-height: 6em;
+	min-width: 300px;
+}
+
+p {
+	font-size: 24px;
+	font-family: Inter, sans-serif;
+}
+
+.flex-item:nth-child(2,5,8) > p {
+	font-size: 32px;
+	font-weight: bolder;
+}
+
+.flex-item:nth-child(3n+3) > p {
+	font-size: 12px;
+}
+
+.flex-item:nth-child(3n+3) {
+	line-height: 3em;
+	align-self: baseline;
+
+}
+
+.flex-item:nth-child(1) {
+	line-height: 10em;
+	align-self: baseline;
+}
+
+.flex-item:nth-child(2,5,8) {
+	align-self: baseline;
+}
+
