@@ -3,51 +3,143 @@
 
 /*  свойства для РОДИТЕЛЯ */
 .flex-container {
-	height: 500px;
+	height: 50rem;
 	background-color: deepskyblue;
+	box-sizing: border-box;
 	display: flex;
 	flex-flow: row wrap;  /* direction + wrap */
-	justify-content: space-around; /* горизонталь */
-	align-items: center; /* вертикаль */
+	justify-content: left; /* горизонталь */
+	align-content: center; /* вертикаль */
   /*align-content: - только при 2+ строках и включенном !wrap! или !wrap-reverse!,
   	выравнивает строки с флекс-элементами */
 }
 
 /*  свойства для ПОТОМКА */
 .flex-item {
-	width: 30%;
 	background-color: gold;
 	text-align: center;
-	line-height: 6em;
+	line-height: 12em;
 	min-width: 300px;
+	flex-basis: 20%;
+
 }
+
+div {
+	border: solid firebrick 5px;
+	border-radius: 15px;
+}
+
 
 p {
 	font-size: 24px;
 	font-family: Inter, sans-serif;
 }
 
-.flex-item:nth-child(2,5,8) > p {
-	font-size: 32px;
-	font-weight: bolder;
+.flex-item:nth-child(2n) {
+	align-self: flex-end;
 }
 
-.flex-item:nth-child(3n+3) > p {
-	font-size: 12px;
+
+
+
+
+@keyframes ass {
+	0%,50%,100% {
+		top: -100px;
+	}
+	25%,75% {
+		top: 0;
+	}
+	
 }
 
-.flex-item:nth-child(3n+3) {
-	line-height: 3em;
-	align-self: baseline;
-
+@keyframes ass-left {
+	0%,50%,100% {
+		left: 100px;
+	}
+	25%,75% {
+		left: 0;
+	}
 }
 
-.flex-item:nth-child(1) {
-	line-height: 10em;
-	align-self: baseline;
+
+div.another {
+	background-color: lightcoral;
+	width: 100%;
+	margin-top: 10%;
 }
 
-.flex-item:nth-child(2,5,8) {
-	align-self: baseline;
+.marg1, .marg2, .marg3,.marg4 {
+	border: none;
+	transition: 1s;
+	width: 300px;
+	height: 300px;
 }
 
+.marg1 {
+
+	background-color: #fff;
+	margin-bottom: -10%;
+	margin-left: 210px;
+}
+
+.marg2 {
+
+	background-color: chocolate;	
+	margin-bottom: -10%;
+	margin-top: 0%;
+	margin-left: 140px;
+	position: relative;
+	animation: ass-left 3s 1s ease-in infinite forwards;
+}
+
+.marg3 {
+	background-color: lightgreen;
+	margin-bottom: -10%;
+	margin-left: 70px;
+}
+
+.marg4 {
+	background-color: lightslategrey;
+	position: relative;
+	animation: ass 3s 1s ease-in infinite forwards;
+}
+
+.marg4_4 {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	transform: translate(0,-100%);
+	border: none;	
+}
+
+.marg4:hover {
+	box-shadow: 10px 5px 5px red;
+}
+.marg4:active {
+	transform: translate(20px, -20px);
+}
+
+.marg3:active {
+	transform: translate(-20px, -20px);
+}
+
+.marg3:hover {
+	box-shadow: 10px 5px 5px lime;
+}
+
+.marg2:active {
+	transform: translate(20px, 20px);
+}
+.marg2:hover {
+	box-shadow: 10px 5px 5px yellow;
+}
+
+.marg1:active {
+	transform: translate(-20px, 20px);
+
+}
+}
+.marg1:hover {
+	box-shadow: 10px 5px 5px purple;
+}
