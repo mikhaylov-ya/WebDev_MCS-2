@@ -3,29 +3,29 @@
 
 /*  свойства для РОДИТЕЛЯ */
 .flex-container {
+	margin: auto;
 	height: 50rem;
-	background-color: deepskyblue;
+	background-color: #e1cc4f;
 	box-sizing: border-box;
 	display: flex;
+	justify-content: space-evenly;
 	flex-flow: row wrap;  /* direction + wrap */
-	justify-content: left; /* горизонталь */
-	align-content: center; /* вертикаль */
+	align-content: space-around; /* вертикаль */
   /*align-content: - только при 2+ строках и включенном !wrap! или !wrap-reverse!,
   	выравнивает строки с флекс-элементами */
 }
 
 /*  свойства для ПОТОМКА */
 .flex-item {
-	background-color: gold;
+	background-color: #01796f;
 	text-align: center;
 	line-height: 12em;
-	min-width: 300px;
-	flex-basis: 20%;
-
+	width: calc(5vw + 5rem);
+	min-width: 105px;
+	margin: 0 calc(2vw + 1em);
 }
 
 div {
-	border: solid firebrick 5px;
 	border-radius: 15px;
 }
 
@@ -35,8 +35,10 @@ p {
 	font-family: Inter, sans-serif;
 }
 
-.flex-item:nth-child(2n) {
-	align-self: flex-end;
+.flex-item:nth-child(2n):hover {
+	transform-origin: left bottom;
+	transform: rotate(50deg);
+	transition: 1s;
 }
 
 
@@ -46,9 +48,11 @@ p {
 @keyframes ass {
 	0%,50%,100% {
 		top: -100px;
+		transform: scale(0.5,0);
 	}
 	25%,75% {
 		top: 0;
+		transform: scale(1,1);
 	}
 	
 }
@@ -65,23 +69,57 @@ p {
 
 div.another {
 	background-color: lightcoral;
-	width: 100%;
+	width: 80%;
+	margin: auto;
 	margin-top: 10%;
 }
 
-.marg1, .marg2, .marg3,.marg4 {
+.marg1, .marg2, .marg3, .marg4 {
 	border: none;
-	transition: 1s;
+	transition: 2s;
 	width: 300px;
 	height: 300px;
 }
 
 .marg1 {
-
-	background-color: #fff;
 	margin-bottom: -10%;
-	margin-left: 210px;
+	margin-left: 500px;
+	position: relative;
+	max-height: 100%;
+	width: 405px;
 }
+
+img {
+	max-height: 300px;
+	min-width: 300px;
+}
+
+
+.placeholder {
+ 	position: absolute;
+ 	display: flex;
+ 	top: 0;
+ 	left: 0;
+ 	opacity: 0;
+ 	height: 100%;
+ 	width: 100%;
+  	background-color: black;
+ 	color: fuchsia;
+ 	justify-content: space-around;
+ 	transition: .3s linear;
+ }
+
+ .placeholder p {
+ 	margin-top: 50px;
+ 	font-size: 14px;
+ }
+
+
+.placeholder:hover {
+ 	opacity: .5;
+ 	transform: scale(1.2);
+}
+
 
 .marg2 {
 
@@ -91,6 +129,8 @@ div.another {
 	margin-left: 140px;
 	position: relative;
 	animation: ass-left 3s 1s ease-in infinite forwards;
+	transform: scale(-1);
+
 }
 
 .marg3 {

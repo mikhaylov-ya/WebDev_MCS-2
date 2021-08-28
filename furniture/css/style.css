@@ -57,3 +57,76 @@ a {
 html { font-size: 10px; }
 
 /* ================================ Блок дефолтный свойств =============================================== */
+
+
+body {
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	background-color: rgb(251, 224, 92);
+	height: calc(7vh + 4vw);
+}
+
+.header > p {
+	font-size: calc(3rem + 1.2vw);
+	margin: auto;
+	text-transform: uppercase;
+}
+
+.content {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 7rem 1vw;
+
+}
+
+.furni {
+	border: solid black 2px;
+	width: calc((100% - (50px*2))/3);
+	height: 100%;
+}
+
+.furni > img {
+	width: 100%;
+}
+
+.furni > p {
+	margin: 2vh 2vw;
+	font-weight: 500;
+	font-size: calc(1vw + 6px);
+	line-height: 1.2em;
+}
+
+.furni > p > span {
+	font-weight: bold;
+}
+
+.footer {
+	display: flex;
+	background-color: rgb(251, 224, 92);
+	height: calc(7vh + 4vw);
+}
+
+.footer > p {
+	font-size: calc(3rem + 1.2vw);
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
