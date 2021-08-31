@@ -120,12 +120,12 @@ main {
 	backface-visibility: hidden;
 	-webkit-transition: -webkit-transform 0.7s;
 	transition: transform 0.7s;
-	justify-content: center;
 }
 
 .card-front.bg-blue {
 	background-color: deepskyblue;
 }
+
 .card-back {
 	-webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
@@ -144,11 +144,16 @@ main {
 }
 
 .card_inner p {
-	font-size: calc(2rem + 1.2vw);
+	font-family: Georgia, Gost, sans-serif;
+	font-size: calc(2rem + 1vw);
 	text-align: center;
 	margin: auto;
 	line-height: 100%;
-	color: white;
+	color: oldlace;
+}
+
+.card-back > p {
+	color: cyan;
 }
 
 .footer {
