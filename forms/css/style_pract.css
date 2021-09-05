@@ -108,9 +108,9 @@ header, .footer {
 .content .form {
 	position: relative;
 	padding: .5vw	;
-	width: calc(100px + 10vw);
+	width: calc(100px + 8vw);
 	left: 5%;
-	top: 7vw;
+	top: 5vw;
 	font: calc(1rem + 0.5vw) Georgia, sans-serif;
 	background-color: palegoldenrod;
 	border-radius: 15px;
@@ -185,6 +185,13 @@ main {
 	.text {
 		left: 70%;
 	}
+	.content .form {
+		top: 3vw;
+	}
+	html {
+		font-size: 8px;
+	}
+
 }
 
 
